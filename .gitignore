@@ -1,0 +1,70 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@helthbrazil 
+3,267
+49,397 13,518 angular/angular
+ Code  Issues 2,512  Pull requests 411  Projects 3  Security  Insights
+angular/.gitignore
+@gkalpak gkalpak build: add recommended config files for VSCode remote development (#3…
+f78bda9 on 20 May
+@alexeagle @IgorMinar @gkalpak @tbosch @vsavkin @mhevery @petebacondarwin @ocombe @vicb @scheglov @robwormald @rkirov @pkozlowski-opensource @mrmeku @mgechev @kevmoo @jasonaden @jakemac53 @gregmagolan @filipesilva
+40 lines (31 sloc)  610 Bytes
+    
+.DS_STORE
+
+/dist/
+/bazel-out
+/integration/bazel/bazel-*
+e2e_test.*
+node_modules
+tools/gulp-tasks/cldr/cldr-data/
+
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.devcontainer/*
+!.devcontainer/recommended-devcontainer.json
+!.devcontainer/recommended-Dockerfile
+.settings/
+.vscode/launch.json
+.vscode/settings.json
+*.swo
+modules/.settings
+modules/.vscode
+
+# Don't check in secret files
+*secret.js
+
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log
+
+# build-analytics
+.build-analytics
+
+# rollup-test output
+/modules/rollup-test/dist/
+
+# User specific bazel settings
+.bazelrc.user
+
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
